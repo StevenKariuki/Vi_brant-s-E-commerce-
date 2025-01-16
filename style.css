@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:gold;
+  }
+  
+  header {
+    background-color:rgba(0, 0, 0, 0.542);
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    
+  }
+  
+  .search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  .search-btn {
+    background-color: black
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search-btn i {
+    font-size: 18px;
+    color: #aaa;
+  }
+  
+  .search-btn:hover i {
+    color: #000;
+  }
+  .login{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.342);
+  }
+  .login a{
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+    justify-content: space-between;
+  }
+    .login a:hover{
+        background-color: gold;
+        color: black;
+        border: dotted;
+    }
+  
+  .nav{
+    border: dotted;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.342);
+  }
+  .nav a{
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .nav a:hover{
+    background-color: gold;
+    color: black;
+    border-radius: 6px;
+  }
+  /* Drop down */
+  /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Button to open the dropdown */
+  .dropdown-btn {
+    color: gold;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: gold;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: gold;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover effect for links */
+  .dropdown-content a:hover {
+    background-color: gold;
+  }
+  
+  /* Show the dropdown when hovering */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change button color on hover */
+  .dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
+  }
+  
+
+  /* EndDrop down */
+
+  /* Carosel */
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width:40%;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  /*end Carosel  */
+  
+  /* cards display items */
+
+  .cards-display {
+    /* glowing border */
+    border-radius: 30px;
+    box-shadow: 0 0 20px gold;  
+
+    
+  }
+
+  .our-products{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.342);
+  }
+  /* Card container */
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.342);
+  }
+.card1 {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Image styling */
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Card content */
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Description styling */
+  .card-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling */
+  .card-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .card-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+  }
+  
